@@ -1,17 +1,17 @@
-# 🏗️ Construction ERP System
+# Construction ERP System
 
 [![Laravel Version](https://img.shields.io/badge/Laravel-11.x-red.svg)](https://laravel.com)
 [![Livewire Version](https://img.shields.io/badge/Livewire-3.x-blue.svg)](https://livewire.laravel.com)
 [![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-purple.svg)](https://php.net)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-##  Overview
+## Overview
 
 A **comprehensive Enterprise Resource Planning (ERP) system** built specifically for construction companies. This system streamlines worker management, project tracking, attendance, payroll, and client billing.
 
-##  Key Features
+## Key Features
 
-###  Worker Management
+### Worker Management
 - Complete worker profiles with contact details
 - Rate types: **Hourly, Daily, or Monthly**
 - Medical certificate tracking with expiry alerts
@@ -57,6 +57,29 @@ A **comprehensive Enterprise Resource Planning (ERP) system** built specifically
 - Monthly payroll summaries with trends
 - Worker advance reports
 
+## Screenshots
+
+### Login Page
+![Login Page](screenshots/Screenshot%20(628).png)
+
+### Admin Dashboard
+![Admin Dashboard](screenshots/admin%20dashboard.png)
+
+### HR Dashboard
+![HR Dashboard](screenshots/HR%20Dashboard.png)
+
+### HR Worker Management
+![HR Worker Management](screenshots/HR%20pages.png)
+
+### Admin Payroll Dashboard
+![Admin Payroll Dashboard](screenshots/admin%20payroll%20check.png)
+
+### Quotation / Budget Preview
+![Quotation Preview](screenshots/quotation.png)
+
+### Additional Views
+![Admin View](screenshots/Screenshot%20(629).png)
+
 ## Technology Stack
 
 | Category | Technologies |
@@ -93,7 +116,7 @@ A **comprehensive Enterprise Resource Planning (ERP) system** built specifically
 - Projects ↔ Expenses (One-to-Many)
 - Payrolls ↔ Projects (Many-to-Many via breakdowns)
 
-## Installation
+### Installation
 
 ### Prerequisites
 - PHP >= 8.2
