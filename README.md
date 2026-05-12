@@ -1,59 +1,143 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# 🏗️ Construction ERP System
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+[![Laravel Version](https://img.shields.io/badge/Laravel-11.x-red.svg)](https://laravel.com)
+[![Livewire Version](https://img.shields.io/badge/Livewire-3.x-blue.svg)](https://livewire.laravel.com)
+[![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-purple.svg)](https://php.net)
+[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## About Laravel
+## 📋 Overview
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+A **comprehensive Enterprise Resource Planning (ERP) system** built specifically for construction companies. This system streamlines worker management, project tracking, attendance, payroll, and client billing.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+## ✨ Key Features
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### 👷 Worker Management
+- Complete worker profiles with contact details
+- Rate types: **Hourly, Daily, or Monthly**
+- Medical certificate tracking with expiry alerts
+- Worker assignment to multiple projects
+- Status tracking (active/inactive/terminated)
 
-## Learning Laravel
+### 🏗️ Project Management
+- Project budgeting with line-item breakdowns
+- Expense tracking by category (materials, equipment, subcontractors)
+- Contract value vs. actual cost tracking
+- Profit/Loss analysis per project
+- Quotation management with VAT support
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+### 📅 Attendance System
+- Daily check-in/out with time tracking
+- Overtime calculation with multiplier support
+- Client billing hours (different from worked hours)
+- Project-wise attendance filtering
+- Payroll generation flag to prevent duplicate processing
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+### 💰 Payroll Processing
+- Automatic payroll generation from attendance records
+- Support for hourly/daily/monthly pay rates
+- Advance deduction management with running balance
+- Payroll batch system (monthly)
+- Project cost breakdown per payroll
+- Overtime multiplier configuration
+- Manual adjustment support
 
-## Laravel Sponsors
+### 📄 Client Billing (Invoices)
+- Professional invoice generation with auto-numbering
+- Spanish VAT (IVA) calculation (configurable percentage)
+- Service-based line items
+- Payment status tracking (paid/unpaid/partial)
+- Terms & conditions section
+- Company details configuration
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+### 📊 Reporting & Dashboards
+- Real-time payroll dashboard
+- Project-wise profit/loss reports
+- Attendance sheets (daily/monthly)
+- Client billing reports
+- Monthly payroll summaries with trends
+- Worker advance reports
 
-### Premium Partners
+## 🛠️ Technology Stack
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+| Category | Technologies |
+|----------|-------------|
+| **Backend** | Laravel 11.x, PHP 8.2+ |
+| **Frontend** | Livewire 3.x, Alpine.js, Tailwind CSS |
+| **Database** | MySQL / PostgreSQL |
+| **Authentication** | Laravel Breeze/Sanctum |
+| **Queue** | Database/SQS/Redis |
+| **Assets** | Vite, NPM |
 
-## Contributing
+## 📊 Database Schema
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+### Core Tables
+- **users** - System users with role-based access (Admin/HR)
+- **roles** - User roles for authorization
+- **workers** - Employee information with rate types and medical tracking
+- **projects** - Project details, budgets, and client information
+- **attendances** - Daily check-in/out with project linking and overtime
+- **worker_advances** - Salary advance tracking with running balance
+- **payroll_batches** - Monthly payroll processing batches
+- **payrolls** - Individual worker payroll calculations
+- **payroll_project_breakdowns** - Project-wise payroll allocation
+- **sale_invoices** - Client billing with Spanish VAT
+- **invoice_items** - Service line items for invoices
+- **project_expenses** - Expense tracking by category
+- **expense_categories** - Organized expense classification
+- **budget_items** - Project budget breakdown
 
-## Code of Conduct
+### Key Relationships
+- Workers ↔ Projects (Many-to-Many with assignment dates)
+- Workers ↔ Attendances (One-to-Many)
+- Workers ↔ Advances (One-to-Many)
+- Projects ↔ Expenses (One-to-Many)
+- Payrolls ↔ Projects (Many-to-Many via breakdowns)
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## 🚀 Installation
 
-## Security Vulnerabilities
+### Prerequisites
+- PHP >= 8.2
+- Composer
+- MySQL >= 5.7 or PostgreSQL >= 10
+- Node.js & NPM
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+### Step 1: Clone the repository
+```bash
+git clone https://github.com/AhmadAli61/Construction-ERP-System.git
+cd Construction-ERP-System
 
-## License
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+### Step 2: Install dependencies
+composer install
+npm install
+
+### Step 3: Environment configuration
+cp .env.example .env
+php artisan key:generate
+
+### Step 4: Run migrations
+php artisan migrate
+
+### Step 5: Create storage link
+php artisan storage:link
+
+### Step 7: Start the application
+php artisan serve
+
+
+## 📧 Contact
+
+**Ahmad Ali**
+- GitHub: [@AhmadAli61](https://github.com/AhmadAli61)
+- Email: your-email@example.com
+- LinkedIn: [Your LinkedIn URL]
+
+---
+
+## ⭐ Show Your Support
+
+If you find this project helpful, please give it a star! ⭐
+
+---
+
+**Built with ❤️ using Laravel & Livewire**
