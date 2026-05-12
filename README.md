@@ -105,24 +105,36 @@ A **comprehensive Enterprise Resource Planning (ERP) system** built specifically
 ```bash
 git clone https://github.com/AhmadAli61/Construction-ERP-System.git
 cd Construction-ERP-System
+```
 
+### Step 2: Install dependencies
+```bash
 
-Step 2: Install dependencies
 composer install
 npm install
+```
 
-Step 3: Environment configuration
+### Step 3: Environment configuration
 cp .env.example .env
+```bash
 php artisan key:generate
+```
 
-Step 4: Run migrations
+### Step 4: Run migrations
+```bash
 php artisan migrate
+```
 
-Step 5: Create storage link
+### Step 5: Create storage link
+```bash
+
 php artisan storage:link
+```
 
-Step 7: Start the application
+### Step 6: Start the application
+```bash
 php artisan serve
+```
 
 
 📧 Contact
