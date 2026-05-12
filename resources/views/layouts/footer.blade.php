@@ -8,7 +8,7 @@
           <script>
             document.write(new Date().getFullYear());
           </script>
-          , made with ❤️ for <span class="fw-bold">OBRERO EUSKADI</span>
+          , made with ❤️ for <span class="fw-bold">Your company</span>
         </div>
       </div>
     </div>

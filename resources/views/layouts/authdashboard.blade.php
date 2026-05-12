@@ -5,11 +5,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | Obrero Euskadi</title>
-    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('build/assets/img/OBREROEUSKA 2.png') }}" />
-    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('build/assets/img/OBREROEUSKA 2.png') }}" />
-    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('build/assets/img/OBREROEUSKA 2.png') }}" />
-    <link rel="shortcut icon" href="{{ asset('build/assets/img/OBREROEUSKA 2.png') }}" />
+    <title>Login | Your company</title>
+    <link rel="icon" type="image/png" sizes="192x192" href="{{ asset('build/assets/img/YourEUSKA 2.png') }}" />
+    <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('build/assets/img/YourEUSKA 2.png') }}" />
+    <link rel="icon" type="image/png" sizes="16x16" href="{{ asset('build/assets/img/YourEUSKA 2.png') }}" />
+    <link rel="shortcut icon" href="{{ asset('build/assets/img/YourEUSKA 2.png') }}" />
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
@@ -566,9 +566,9 @@
                 <div class="logo-section">
                     <!-- Custom Company Logo -->
                     <div class="company-logo">
-                        <img src="{{ asset('build/assets/img/OBREROEUSKA 2.png') }}" alt="Obrero Euskadi">
+                        <img src="{{ asset('build/assets/img/YourEUSKA 2.png') }}" alt="Your company">
                     </div>
-                    <h1>Obrero Euskadi</h1>
+                    <h1>Your company</h1>
                     <p>Construction ERP Solution</p>
                 </div>
 
@@ -577,7 +577,7 @@
                 </div>
 
                 <div class="auth-footer">
-                    <p>&copy; {{ date('Y') }} Obrero Euskadi. All rights reserved.</p>
+                    <p>&copy; {{ date('Y') }} Your company. All rights reserved.</p>
                 </div>
             </div>
         </div>

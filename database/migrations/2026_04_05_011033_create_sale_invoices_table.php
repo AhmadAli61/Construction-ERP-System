@@ -18,7 +18,7 @@ $table->id();
             $table->enum('payment_status', ['paid', 'unpaid', 'partial'])->default('unpaid');
 
             // Company details (hardcoded service provider)
-            $table->string('company_name')->default('Obrero Euskadi');
+            $table->string('company_name')->default('Your company');
             $table->string('company_address')->default('Calle Madura 10 02 dr Guipuzkoa, Bergara, Spain');
             $table->string('company_cif')->nullable();
             $table->string('company_phone')->nullable();

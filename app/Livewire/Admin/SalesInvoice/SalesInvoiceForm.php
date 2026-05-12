@@ -16,11 +16,11 @@ class SalesInvoiceForm extends Component
     public $payment_status = 'unpaid';
 
     // Company details (hardcoded)
-    public $company_name = 'Obrero Euskadi';
+    public $company_name = 'Your company';
     public $company_address = 'Calle Madura 10 02 dr Guipuzkoa, Bergara, Spain';
     public $company_cif = 'B13988001';
     public $company_phone = '+34 662 511 334';
-    public $company_email = 'obreroeuskadi2023@gmail.com';
+    public $company_email = 'Yourcompany2023@gmail.com';
 
     // Project/Client details
     public $project_id;

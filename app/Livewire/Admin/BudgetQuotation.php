@@ -44,11 +44,11 @@ protected $listeners = ['closePrintModal' => 'closePrintModal'];
 
     // Company info
     public $company = [
-        'name' => 'OBRERO EUSKADI 2023 S.L',
+        'name' => 'Your company 2023 S.L',
         'address' => '20570 Bergara, Gipuzkoa',
         'tax_id' => 'B-13988001',
         'phone' => '662511334',
-        'email' => 'obreroeuskadi2023@gmail.com',
+        'email' => 'Yourcompany2023@gmail.com',
     ];
 
     // UI state

@@ -13,7 +13,7 @@
     <meta name="description" content="" />
 
     <!-- Favicon -->
-    <link rel="icon" type="image/x-icon" href="{{ asset('build/assets/img/OBREROEUSKA 2.png') }}" />
+    <link rel="icon" type="image/x-icon" href="{{ asset('build/assets/img/YourEUSKA 2.png') }}" />
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -93,12 +93,12 @@
     <div class="app-brand demo">
         <a href="#" class="app-brand-link">
             <span class="demo">
-                <img src="{{ asset('build/assets/img/OBREROEUSKA 2.png') }}" alt="OBREROEUSKA"
+                <img src="{{ asset('build/assets/img/YourEUSKA 2.png') }}" alt="YourEUSKA"
                     style="width: 50px; height: auto;">
             </span>
             <span class="app-brand-text demo menu-text fw-bold"
                 style="font-size: 14px; line-height: 1.2; background: linear-gradient(to right, #ff0000, #000000); -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
-                OBRERO EUSKADI<br>
+                Your company<br>
                 <span style="font-size: 11px; font-weight: 500;">
                     2023 S.L
                 </span>

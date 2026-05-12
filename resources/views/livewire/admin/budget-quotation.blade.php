@@ -730,7 +730,7 @@
                         <div style="padding: 30px 35px 20px 35px; border-bottom: 1px solid #e2e8f0;">
                             <div style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 20px;">
                                 <div>
-                                    <img src="{{ asset('build/assets/img/OBREROEUSKA 2.png') }}" alt="Logo" style="max-height: 100px; width: auto;">
+                                    <img src="{{ asset('build/assets/img/YourEUSKA 2.png') }}" alt="Logo" style="max-height: 100px; width: auto;">
                                 </div>
                                 <div style="text-align: right;">
                                     <div style="color: #dc2626; font-weight: 600; font-size: 13px; letter-spacing: 2px; margin-bottom: 5px;">
