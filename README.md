@@ -107,34 +107,34 @@ git clone https://github.com/AhmadAli61/Construction-ERP-System.git
 cd Construction-ERP-System
 
 
-### Step 2: Install dependencies
+Step 2: Install dependencies
 composer install
 npm install
 
-### Step 3: Environment configuration
+Step 3: Environment configuration
 cp .env.example .env
 php artisan key:generate
 
-### Step 4: Run migrations
+Step 4: Run migrations
 php artisan migrate
 
-### Step 5: Create storage link
+Step 5: Create storage link
 php artisan storage:link
 
-### Step 7: Start the application
+Step 7: Start the application
 php artisan serve
 
 
-## 📧 Contact
+📧 Contact
 
 **Ahmad Ali**
 - GitHub: [@AhmadAli61](https://github.com/AhmadAli61)
-- Email: your-email@example.com
-- LinkedIn: [Your LinkedIn URL]
+- Email: mlkahmi61@gmail.com
+- LinkedIn: https://www.linkedin.com/in/ahmedali61/
 
 ---
 
-## ⭐ Show Your Support
+⭐ Show Your Support
 
 If you find this project helpful, please give it a star! ⭐
 
