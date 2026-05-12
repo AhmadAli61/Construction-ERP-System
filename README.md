@@ -5,34 +5,34 @@
 [![PHP Version](https://img.shields.io/badge/PHP-8.2%2B-purple.svg)](https://php.net)
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 📋 Overview
+##  Overview
 
 A **comprehensive Enterprise Resource Planning (ERP) system** built specifically for construction companies. This system streamlines worker management, project tracking, attendance, payroll, and client billing.
 
-## ✨ Key Features
+##  Key Features
 
-### 👷 Worker Management
+###  Worker Management
 - Complete worker profiles with contact details
 - Rate types: **Hourly, Daily, or Monthly**
 - Medical certificate tracking with expiry alerts
 - Worker assignment to multiple projects
 - Status tracking (active/inactive/terminated)
 
-### 🏗️ Project Management
+### Project Management
 - Project budgeting with line-item breakdowns
 - Expense tracking by category (materials, equipment, subcontractors)
 - Contract value vs. actual cost tracking
 - Profit/Loss analysis per project
 - Quotation management with VAT support
 
-### 📅 Attendance System
+### Attendance System
 - Daily check-in/out with time tracking
 - Overtime calculation with multiplier support
 - Client billing hours (different from worked hours)
 - Project-wise attendance filtering
 - Payroll generation flag to prevent duplicate processing
 
-### 💰 Payroll Processing
+### Payroll Processing
 - Automatic payroll generation from attendance records
 - Support for hourly/daily/monthly pay rates
 - Advance deduction management with running balance
@@ -41,7 +41,7 @@ A **comprehensive Enterprise Resource Planning (ERP) system** built specifically
 - Overtime multiplier configuration
 - Manual adjustment support
 
-### 📄 Client Billing (Invoices)
+### Client Billing (Invoices)
 - Professional invoice generation with auto-numbering
 - Spanish VAT (IVA) calculation (configurable percentage)
 - Service-based line items
@@ -49,7 +49,7 @@ A **comprehensive Enterprise Resource Planning (ERP) system** built specifically
 - Terms & conditions section
 - Company details configuration
 
-### 📊 Reporting & Dashboards
+### Reporting & Dashboards
 - Real-time payroll dashboard
 - Project-wise profit/loss reports
 - Attendance sheets (daily/monthly)
@@ -57,7 +57,7 @@ A **comprehensive Enterprise Resource Planning (ERP) system** built specifically
 - Monthly payroll summaries with trends
 - Worker advance reports
 
-## 🛠️ Technology Stack
+## Technology Stack
 
 | Category | Technologies |
 |----------|-------------|
@@ -68,7 +68,7 @@ A **comprehensive Enterprise Resource Planning (ERP) system** built specifically
 | **Queue** | Database/SQS/Redis |
 | **Assets** | Vite, NPM |
 
-## 📊 Database Schema
+## Database Schema
 
 ### Core Tables
 - **users** - System users with role-based access (Admin/HR)
@@ -93,7 +93,7 @@ A **comprehensive Enterprise Resource Planning (ERP) system** built specifically
 - Projects ↔ Expenses (One-to-Many)
 - Payrolls ↔ Projects (Many-to-Many via breakdowns)
 
-## 🚀 Installation
+## Installation
 
 ### Prerequisites
 - PHP >= 8.2
@@ -137,7 +137,7 @@ php artisan serve
 ```
 
 
-📧 Contact
+Contact
 
 **Ahmad Ali**
 - GitHub: [@AhmadAli61](https://github.com/AhmadAli61)
@@ -146,10 +146,10 @@ php artisan serve
 
 ---
 
-⭐ Show Your Support
+Show Your Support
 
-If you find this project helpful, please give it a star! ⭐
+If you find this project helpful, please give it a star!
 
 ---
 
-**Built with ❤️ using Laravel & Livewire**
+**Built with Laravel & Livewire**
